@@ -43,7 +43,7 @@ The handler for a gesture needs gesture-specific information. For example, the U
 
 The final one is interesting, as it lets you reset the translation so far. This can provide "incremental" translation.
 
-Gestures are also provided (by the abstract superclass) with a property called `state`. This enum has several states. For a pan (an example of a continuous gesture), the ones that are triggered are:
+Gestures are also provided (by the abstract superclass) with a property called `state` (var state: UIPanGestureRecognizerState { get }). This enum has several states. For a pan (an example of a continuous gesture), the ones that are triggered are:
 * `.possible` - State before the pan starts
 * `.began` - State when the finger goes down and a pan begins
 * `.changed` - State that is set repeatedly as the pan goes on
