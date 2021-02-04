@@ -1,8 +1,10 @@
 # Lecture 6, Part 1: Gestures
 
+Gestures represented in IOS with the class UIRecognizer. It's a thing that recognizes a gesture from all those finger movements. The base this class is "abstract".
+
 There are two ways to get touches in iOS:
-1. Get notified of the raw touch events (don't do this one)
-2. React to certain predefined touch events. This is the way to go!
+1. One is you have to tell  view, please start recognizing pinches, taps. Get notified of the raw touch events (don't do this one)
+2. Then you provide a handler so that when it does recognize it calls some function. When a gesture starts to happen, a handler's gonna get called. React to certain predefined touch events.
 
 To get the gestures, we use the classes that inherit from an abstract base class called `UIGestureRecogniser`. There is one for each of the main gestures, e.g. `UIPanGestureRecognizer`. There are a [variety of common gesture that iOS supports](https://developer.apple.com/ios/human-interface-guidelines/user-interaction/gestures/)
 
