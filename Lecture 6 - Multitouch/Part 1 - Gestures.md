@@ -1,5 +1,7 @@
 # Lecture 6, Part 1: Gestures
 
+[Real Using Gestures](https://github.com/eldaroid/PlayingCard-App-in-iOS/wiki/4.-Gestures)
+
 Gestures represented in IOS with the class UIRecognizer. It's a thing that recognizes a gesture from all those finger movements. The base this class is "abstract".
 
 There are two ways to get touches in iOS:
@@ -39,6 +41,9 @@ In this method, the parameters are:
 You can add as many gesture recognizers as you want.
 
 You can also add the gesture recognizer to the storyboard directly using the interface builder. This can be useful for simple gestures.
+
+Ask View to recognize this with calling  addGestureRocognizer. When a gesture starts to happen, a handler's gonna get called.
+So each concrete subclass provides special methods for handling that type of gesture.
 
 ## Gesture Methods and States
 
