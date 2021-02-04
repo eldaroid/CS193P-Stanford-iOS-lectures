@@ -6,7 +6,12 @@ There are two ways to get touches in iOS:
 1. One is you have to tell  view, please start recognizing pinches, taps. Get notified of the raw touch events (don't do this one)
 2. Then you provide a handler so that when it does recognize it calls some function. When a gesture starts to happen, a handler's gonna get called. React to certain predefined touch events.
 
-To get the gestures, we use the classes that inherit from an abstract base class called `UIGestureRecogniser`. There is one for each of the main gestures, e.g. `UIPanGestureRecognizer`. There are a [variety of common gesture that iOS supports](https://developer.apple.com/ios/human-interface-guidelines/user-interaction/gestures/)
+To get the gestures, we use the classes that inherit from an abstract base class called `UIGestureRecogniser`. There is one for each of the main gestures, e.g. `UIPanGestureRecognizer`. There are a [variety of common gesture that iOS supports](https://developer.apple.com/ios/human-interface-guidelines/user-interaction/gestures/).
+
+For instance: 
+
+![alt text](https://github.com/eldaroid/pictures/blob/master/PlayingCard/gestures2.png)
+![alt text](https://github.com/eldaroid/pictures/blob/master/PlayingCard/gestures3.png)
 
 In more depth, the process is:
 1. Add a gesture recogniser to a `UIView`. This is usually done by the controller, though it can be done by the view itself if its integral to its existence.
