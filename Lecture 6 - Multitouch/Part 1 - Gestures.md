@@ -33,8 +33,8 @@ The first step, setting the gesture recogniser, is usually done in the `didSet` 
 ```
 
 In this method, the parameters are:
-* `target` - which is what gets notified when the gesture is recognised. Here, it is the controller
-* `action` - the method invoked on recognition.  The argument to that method is the recognizer.
+* `target` - which is what gets notified when the gesture is recognised. Target that is the object that is going to handle this, it's usually either the controller or the view itself. Here, it is the controller.
+* `action` - the method invoked on recognition.  The argument to that method is the recognizer. Going to be called when this gesture starts to recognize tap. And that's just the name(ViewController.pan(recognizer:)) of the method #selector around it.
 
 You can add as many gesture recognizers as you want.
 
