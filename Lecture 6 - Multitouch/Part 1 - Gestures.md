@@ -1,10 +1,19 @@
 # Lecture 6, Part 1: Gestures
 
-There are two ways to get touches in iOS:
-1. Get notified of the raw touch events (don't do this one)
-2. React to certain predefined touch events. This is the way to go!
+[Real Using Gestures](https://github.com/eldaroid/PlayingCard-App-in-iOS/wiki/4.-Gestures)
 
-To get the gestures, we use the classes that inherit from an abstract base class called `UIGestureRecogniser`. There is one for each of the main gestures, e.g. `UIPanGestureRecognizer`. There are a [variety of common gesture that iOS supports](https://developer.apple.com/ios/human-interface-guidelines/user-interaction/gestures/)
+Gestures represented in IOS with the class UIRecognizer. It's a thing that recognizes a gesture from all those finger movements. The base this class is "abstract".
+
+There are two ways to get touches in iOS:
+1. One is you have to tell  view, please start recognizing pinches, taps. Get notified of the raw touch events (don't do this one)
+2. Then you provide a handler so that when it does recognize it calls some function. When a gesture starts to happen, a handler's gonna get called. React to certain predefined touch events.
+
+To get the gestures, we use the classes that inherit from an abstract base class called `UIGestureRecogniser`. There is one for each of the main gestures, e.g. `UIPanGestureRecognizer`. There are a [variety of common gesture that iOS supports](https://developer.apple.com/ios/human-interface-guidelines/user-interaction/gestures/).
+
+For instance: 
+
+![alt text](https://github.com/eldaroid/pictures/blob/master/PlayingCard/gestures2.png)
+![alt text](https://github.com/eldaroid/pictures/blob/master/PlayingCard/gestures3.png)
 
 In more depth, the process is:
 1. Add a gesture recogniser to a `UIView`. This is usually done by the controller, though it can be done by the view itself if its integral to its existence.
@@ -26,12 +35,15 @@ The first step, setting the gesture recogniser, is usually done in the `didSet` 
 ```
 
 In this method, the parameters are:
-* `target` - which is what gets notified when the gesture is recognised. Here, it is the controller
-* `action` - the method invoked on recognition.  The argument to that method is the recognizer.
+* `target` - which is what gets notified when the gesture is recognised. Target that is the object that is going to handle this, it's usually either the controller or the view itself. Here, it is the controller.
+* `action` - the method invoked on recognition.  The argument to that method is the recognizer. Going to be called when this gesture starts to recognize tap. And that's just the name(ViewController.pan(recognizer:)) of the method #selector around it.
 
 You can add as many gesture recognizers as you want.
 
 You can also add the gesture recognizer to the storyboard directly using the interface builder. This can be useful for simple gestures.
+
+Ask View to recognize this with calling  addGestureRocognizer. When a gesture starts to happen, a handler's gonna get called.
+So each concrete subclass provides special methods for handling that type of gesture.
 
 ## Gesture Methods and States
 
@@ -43,7 +55,7 @@ The handler for a gesture needs gesture-specific information. For example, the U
 
 The final one is interesting, as it lets you reset the translation so far. This can provide "incremental" translation.
 
-Gestures are also provided (by the abstract superclass) with a property called `state`. This enum has several states. For a pan (an example of a continuous gesture), the ones that are triggered are:
+Gestures are also provided (by the abstract superclass) with a property called `state` (var state: UIPanGestureRecognizerState { get }). This enum has several states. For a pan (an example of a continuous gesture), the ones that are triggered are:
 * `.possible` - State before the pan starts
 * `.began` - State when the finger goes down and a pan begins
 * `.changed` - State that is set repeatedly as the pan goes on
