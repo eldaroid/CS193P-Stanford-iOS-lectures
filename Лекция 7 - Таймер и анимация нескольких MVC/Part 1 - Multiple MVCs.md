@@ -4,7 +4,7 @@ MVCs can be linking to each other by treating one MVC group as the View in anoth
 
 To let us do this, iOS provides special controllers whose View is another MVC. (We could also make our own Controller to do this, but it is rarely necessary, so we won't be covering that in this course). The 3 Controller's iOS provides are:
 
-* `UITabBarController` - Creates a tab bar in the UI, each with its own MVC. You can set the tab bar icon, badge and title in either the storyboard or using the `tabBarItem` property. Generally, its recommended not to have more than 5 MVCs in a single tab bar controller, though iOS does provide UI to handle this circumstance (If there are too many tabs to fit here, the UITabBarController will automatically present a UI for the user to manage the overflow!).
+* `UITabBarController` - Creates a tab bar in the UI, each with its own MVC. You can set the tab bar icon, badge and title in either the storyboard or using the `tabBarItem` property. Generally, its recommended not to have more than 5 MVCs in a single tab bar controller, though iOS does provide UI to handle this circumstance (If there are too many tabs to fit here, the UITabBarController will automatically present a UI for the user to manage the overflow!). And if they're 6 or more, then the fifth one becomes a little more button and you click it. And ios provides an Api or UI rather for the user to pick which tabs thay want to be there at the bottom or to pick some other tab that's not showing.
 * `UISplitViewController` - Puts 2 MVCs side-by-side on the screen. The LHS MVC is the 'master', and the RHS is the 'detail'. Split-view is available for tablets and iPhone pluses.
 
 ![](https://github.com/eldaroid/pictures/blob/master/Swift/UISplitViewController.png)
