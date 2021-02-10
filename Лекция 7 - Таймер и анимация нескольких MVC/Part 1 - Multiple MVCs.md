@@ -6,6 +6,9 @@ To let us do this, iOS provides special controllers whose View is another MVC. (
 
 * `UITabBarController` - Creates a tab bar in the UI, each with its own MVC. You can set the tab bar icon, badge and title in either the storyboard or using the `tabBarItem` property. Generally, its recommended not to have more than 5 MVCs in a single tab bar controller, though iOS does provide UI to handle this circumstance (If there are too many tabs to fit here, the UITabBarController will automatically present a UI for the user to manage the overflow!).
 * `UISplitViewController` - Puts 2 MVCs side-by-side on the screen. The LHS MVC is the 'master', and the RHS is the 'detail'. Split-view is available for tablets and iPhone pluses.
+
+![](UISplitViewController)
+
 * `UINavigationController` - Acts as a stack onto which you can push and pop MVCs (like a stack of cards). The top area in this view is drawn by the UINavigationController, and it provides a title and back button. This is controlled by the UIViewController's `navigationItem` property. To operate a UINavigationController, you have to set its `rootViewController` property. This sets the view at the bottom of your stack. Note that when you back out of a view, you actually deallocate all the memory is was using from the heap.
 
 Each of these controllers contains a property called `viewControllers: [UIViewController]? {get set}` which allows you to access its sub-MVCs. 
