@@ -1,3 +1,5 @@
+[Real using Multiple MVCs](https://github.com/eldaroid/Concentration-App-in-iOS/wiki/7.-Multiple-MVCs,-Timer-and-Animation)
+
 # Lecture 7, Part 1: Multiple MVCs
 
 MVCs can be linking to each other by treating one MVC group as the View in another one. This implies that if an MVC wants to talk to its parent controller, it needs to do so in a blind structured way in the same way that a View does.
