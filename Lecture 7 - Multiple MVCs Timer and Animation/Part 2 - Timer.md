@@ -28,9 +28,16 @@ Note that the variable here is `weak`. This is fine, as the run loop will keep a
 
 Thus, if the timer finished, e.g. if it is not repeating or if its been manually stopped, its memory will automatically be deallocated. What's more, we can check to see if the timer is still running by just seeing if it's nil or not. Nifty!
 
- To stop a timer manually, we just call:
+ We need to be a bit careful with repeating timers. You don't want them running forever. To stop a timer manually, we just call:
  ```Swift
  timer.invalidate()
  ```
+
+You can also specify a tolerance on your timer. *That just says: if this timer goes off once an hour, it's okay if it goes off 30 seconds earlier or 30 second late.*
+
+![alt text](https://github.com/eldaroid/pictures/blob/master/Concentration/7.63.png)
+
+Why would set the tolerance?
+Because  it could help the system be a little more battery efficient. Cuz the system might not be awake exactly one hour later, it might be sleeping. But it might wake up to check cellular status or something like that, and then it could run it. So if you give it a little tolearnce, it won't have to wake up specifially to try and run your timer.
 
 [Previous Note](../Lecture%207%20-%20Multiple%20MVCs%20Timer%20and%20Animation/Part%201%20-%20Multiple%20MVCs.md) | [Back To Contents](https://github.com/Firanus/stanford-iOS-lecture-notes) |  [Next Note](../Lecture%207%20-%20Multiple%20MVCs%20Timer%20and%20Animation/Part%203%20-%20Kinds%20of%20Animation.md)
