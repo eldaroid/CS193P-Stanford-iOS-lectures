@@ -10,4 +10,4 @@ for num in stride(from: 0.5,  through: 15.25, by: 0.3) {
 }
 ```
 
-[Previous Note](../Lecture%203%20-%20The%20Swift%20Programming%20Language/Part%201%20-%20Autolayout%20Briefly.md) | [Back To Contents](https://github.com/Firanus/stanford-iOS-lecture-notes) |  [Next Note](../Lecture%203%20-%20The%20Swift%20Programming%20Language/Part%203%20-%20Tuples.md)
+[Previous Note](../Lecture%203%20-%20The%20Swift%20Programming%20Language/Part%201%20-%20Autolayout%20Briefly.md) | [Back To Contents](https://github.com/eldaroid/CS193P-Stanford-iOS-lectures) |  [Next Note](../Lecture%203%20-%20The%20Swift%20Programming%20Language/Part%203%20-%20Tuples.md)
