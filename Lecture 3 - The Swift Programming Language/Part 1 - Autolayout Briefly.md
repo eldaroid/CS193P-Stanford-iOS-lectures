@@ -10,4 +10,4 @@ Two different features in iOS allow us to accomplish this:
     * There is a button in Xcode which does this automatically. Inspecting the element in the Utilities panel then allows you to adjust the card spacing, axis and distribution.
 * To pin items, we need to create relationships between views, which we do by Ctrl+Dragging the Grouped elements to the edges of the view and selecting the 'to Safe Space' options.
 
-[Previous Note](../Lecture%203%20-%20The%20Swift%20Programming%20Language/Part%200%20-%20Intro.md) | [Back To Contents](https://github.com/Firanus/stanford-iOS-lecture-notes) |  [Next Note](../Lecture%203%20-%20The%20Swift%20Programming%20Language/Part%202%20-%20Ranges.md)
+[Previous Note](../Lecture%203%20-%20The%20Swift%20Programming%20Language/Part%200%20-%20Intro.md) | [Back To Contents](https://github.com/eldaroid/CS193P-Stanford-iOS-lectures) |  [Next Note](../Lecture%203%20-%20The%20Swift%20Programming%20Language/Part%202%20-%20Ranges.md)
