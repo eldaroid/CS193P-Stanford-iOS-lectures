@@ -25,4 +25,4 @@ Note that if you do implement `set`, you don't explicitly have to name the varia
 
 An example of a good opportunity to implement this in our Concentration app is the `indexOfOneAndOnlyOneFaceUpCard` property. Rather than manually updating that, it would make a lot more sense to compute it by just looking at all the cards to see if there is one face up. If there is, return its index, if not, return nil. The set could then turn all other cards facedown.
 
-[Previous Note](../Lecture%203%20-%20The%20Swift%20Programming%20Language/Part%203%20-%20Tuples.md) | [Back To Contents](https://github.com/Firanus/stanford-iOS-lecture-notes) |  [Next Note](../Lecture%203%20-%20The%20Swift%20Programming%20Language/Part%205%20-%20Access%20Control.md)
+[Previous Note](../Lecture%203%20-%20The%20Swift%20Programming%20Language/Part%203%20-%20Tuples.md) | [Back To Contents](https://github.com/eldaroid/CS193P-Stanford-iOS-lectures) |  [Next Note](../Lecture%203%20-%20The%20Swift%20Programming%20Language/Part%205%20-%20Access%20Control.md)
