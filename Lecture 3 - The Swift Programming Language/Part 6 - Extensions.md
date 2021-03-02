@@ -9,4 +9,4 @@ These functions are easily abused, so it is best to be careful with them. Rememb
 
 For beginners, it is best to stick to small, well-contained helper functions.
 
-[Previous Note](../Lecture%203%20-%20The%20Swift%20Programming%20Language/Part%205%20-%20Access%20Control.md) | [Back To Contents](https://github.com/Firanus/stanford-iOS-lecture-notes) |  [Next Note](../Lecture%203%20-%20The%20Swift%20Programming%20Language/Part%207%20-%20Enumerations.md)
+[Previous Note](../Lecture%203%20-%20The%20Swift%20Programming%20Language/Part%205%20-%20Access%20Control.md) | [Back To Contents](https://github.com/eldaroid/CS193P-Stanford-iOS-lectures) |  [Next Note](../Lecture%203%20-%20The%20Swift%20Programming%20Language/Part%207%20-%20Enumerations.md)
