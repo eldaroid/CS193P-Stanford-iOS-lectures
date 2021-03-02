@@ -25,4 +25,4 @@ You can use tuples to return multiple values from functions, e.g.
 func getSize() -> (weight: Double, height: Double) { return (250,80) }
 ```
 
-[Previous Note](../Lecture%203%20-%20The%20Swift%20Programming%20Language/Part%202%20-%20Ranges.md) | [Back To Contents](https://github.com/Firanus/stanford-iOS-lecture-notes) |  [Next Note](../Lecture%203%20-%20The%20Swift%20Programming%20Language/Part%204%20-%20Computed%20Values.md)
+[Previous Note](../Lecture%203%20-%20The%20Swift%20Programming%20Language/Part%202%20-%20Ranges.md) | [Back To Contents](https://github.com/eldaroid/CS193P-Stanford-iOS-lectures) |  [Next Note](../Lecture%203%20-%20The%20Swift%20Programming%20Language/Part%204%20-%20Computed%20Values.md)
