@@ -7,6 +7,8 @@ This lecture begins with a description of MVC. His descriptions are:
 
 MVC is about managing the communications between these different types. The keys are:
 
+![alt text](https://github.com/eldaroid/pictures/blob/master/Swift/MVC.jpg)
+
 * The **controller** can talk to both the model and the view directly.
 * The **model** and the **view** should *NEVER* talk to each other. They handle entirely different parts of the application
 * The **view** can talk to the controller, but the communication needs to be 
