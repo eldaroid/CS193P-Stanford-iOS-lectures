@@ -38,4 +38,4 @@ case .some(let data1):
 }
 ```
 
-[Previous Note](../Lecture%203%20-%20The%20Swift%20Programming%20Language/Part%207%20-%20Enumerations.md) | [Back To Contents](https://github.com/Firanus/stanford-iOS-lecture-notes) |  [Next Note](../Lecture%203%20-%20The%20Swift%20Programming%20Language/Part%209%20-%20Data%20Structures.md)
+[Previous Note](../Lecture%203%20-%20The%20Swift%20Programming%20Language/Part%207%20-%20Enumerations.md) | [Back To Contents](https://github.com/eldaroid/CS193P-Stanford-iOS-lectures) |  [Next Note](../Lecture%203%20-%20The%20Swift%20Programming%20Language/Part%209%20-%20Data%20Structures.md)
