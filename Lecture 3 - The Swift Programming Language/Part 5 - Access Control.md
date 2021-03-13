@@ -13,4 +13,4 @@ We will be focused on the first 4 in this course, as we are focused on building 
 
 A good strategy is to mark everything `private` by default, and only remove the designation when you are sure that the API is ready to be used by other code.
 
-[Previous Note](../Lecture%203%20-%20The%20Swift%20Programming%20Language/Part%204%20-%20Computed%20Values.md) | [Back To Contents](https://github.com/Firanus/stanford-iOS-lecture-notes) |  [Next Note](../Lecture%203%20-%20The%20Swift%20Programming%20Language/Part%206%20-%20Extensions.md)
+[Previous Note](../Lecture%203%20-%20The%20Swift%20Programming%20Language/Part%204%20-%20Computed%20Values.md) | [Back To Contents](https://github.com/eldaroid/CS193P-Stanford-iOS-lectures) |  [Next Note](../Lecture%203%20-%20The%20Swift%20Programming%20Language/Part%206%20-%20Extensions.md)

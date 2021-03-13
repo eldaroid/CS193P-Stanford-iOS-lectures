@@ -100,4 +100,4 @@ Such an enum can access its own associated data using `switch self`.
 
 An enum can also modify its own state. However, you have to put the `mutating` keyword in front of the function. This is also required in `struct`s. It is necessary because Swift uses copy-on-write when passing on value types. To do so, it needs to know which methods might write. `mutating` tells it.
 
-[Previous Note](../Lecture%203%20-%20The%20Swift%20Programming%20Language/Part%206%20-%20Extensions.md) | [Back To Contents](https://github.com/Firanus/stanford-iOS-lecture-notes) |  [Next Note](../Lecture%203%20-%20The%20Swift%20Programming%20Language/Part%208%20-%20Optionals.md)
+[Previous Note](../Lecture%203%20-%20The%20Swift%20Programming%20Language/Part%206%20-%20Extensions.md) | [Back To Contents](https://github.com/eldaroid/CS193P-Stanford-iOS-lectures) |  [Next Note](../Lecture%203%20-%20The%20Swift%20Programming%20Language/Part%208%20-%20Optionals.md)

@@ -7,6 +7,8 @@ This lecture begins with a description of MVC. His descriptions are:
 
 MVC is about managing the communications between these different types. The keys are:
 
+![alt text](https://github.com/eldaroid/pictures/blob/master/Swift/MVC.jpg)
+
 * The **controller** can talk to both the model and the view directly.
 * The **model** and the **view** should *NEVER* talk to each other. They handle entirely different parts of the application
 * The **view** can talk to the controller, but the communication needs to be 
@@ -21,4 +23,4 @@ Interestingly, apps will often use a combination of MVCs, with each individual o
 
 When one MVC wants to talk to another, it always treat that MVC as one of its Views. It is important to restrict these connections, or debugging apps become impossible.
 
-[Previous Lecture](../Lecture%201/Lecture%201.md) | [Back To Contents](https://github.com/Firanus/stanford-iOS-lecture-notes) |  [Next Lecture](../Lecture%203%20-%20The%20Swift%20Programming%20Language/Part%200%20-%20Intro.md)
+[Previous Lecture](../Lecture%201/Lecture%201.md) | [Back To Contents](https://github.com/eldaroid/CS193P-Stanford-iOS-lectures) |  [Next Lecture](../Lecture%203%20-%20The%20Swift%20Programming%20Language/Part%200%20-%20Intro.md)
